@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "anndataconcat"
-description: Module metadata for process ANNDATACONCAT
+description: "Module metadata for process ANNDATACONCAT"
 keywords:
-  - anndataconcat
-  - nextflow
-  - module
+  - "anndataconcat"
+  - "nextflow"
+  - "module"
 tools:
   - "anndataconcat":
       description: "Wrapper process for ANNDATACONCAT"
@@ -19,7 +19,16 @@ input:
   - []
 
 output:
-  - []
+  output_1:
+    -
+      - output_1:
+          type: string
+          description: 'path "concatenated_adata.h5ad", emit: concat_anndata'
+  output_2:
+    -
+      - output_2:
+          type: string
+          description: 'path "versions.yml",           emit: versions'
 
 authors:
   - "@cmatKhan"

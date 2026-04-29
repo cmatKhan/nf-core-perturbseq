@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "doublets_scrub"
-description: Module metadata for process doublets_scrub
+description: "Module metadata for process doublets_scrub"
 keywords:
-  - doublets_scrub
-  - nextflow
-  - module
+  - "doublets_scrub"
+  - "nextflow"
+  - "module"
 tools:
   - "doublets_scrub":
       description: "Wrapper process for doublets_scrub"
@@ -16,10 +16,17 @@ tools:
       identifier: null
 
 input:
-  - []
+  -
+    - input_1:
+        type: string
+        description: 'path mudata'
 
 output:
-  - []
+  output_1:
+    -
+      - output_1:
+          type: string
+          description: 'path ''mudata_doublet.h5mu'', emit: mudata_doublet'
 
 authors:
   - "@cmatKhan"

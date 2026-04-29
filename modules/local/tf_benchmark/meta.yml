@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "tf_benchmark"
-description: Module metadata for process tf_benchmark
+description: "Module metadata for process tf_benchmark"
 keywords:
-  - tf_benchmark
-  - nextflow
-  - module
+  - "tf_benchmark"
+  - "nextflow"
+  - "module"
 tools:
   - "tf_benchmark":
       description: "Wrapper process for tf_benchmark"
@@ -16,10 +16,25 @@ tools:
       identifier: null
 
 input:
-  - []
+  -
+    - input_1:
+        type: string
+        description: 'path inference_mudata'
+  -
+    - input_2:
+        type: string
+        description: 'path gencode_gtf'
+  -
+    - input_3:
+        type: string
+        description: 'path encode_bed_dir'
 
 output:
-  - []
+  output_1:
+    -
+      - output_1:
+          type: string
+          description: 'path ''benchmark_output'', emit: benchmark_output'
 
 authors:
   - "@cmatKhan"
