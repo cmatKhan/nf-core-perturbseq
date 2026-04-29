@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
+name: "dashboard"
+description: write your description here
+keywords:
+  - sort
+  - example
+  - genomics
+tools:
+  - "dashboard":
+      description: ""
+      homepage: ""
+      documentation: ""
+      tool_dev_url: ""
+      doi: ""
+      licence: null
+      identifier: null
+input:
+  - []
+output:
+  - []
+authors:
+  - "@cmatKhan"
+maintainers:
+  - "@cmatKhan"

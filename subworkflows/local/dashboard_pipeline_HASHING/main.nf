@@ -1,0 +1,81 @@
+include { DASHBOARD as DASHBOARD_HASH         } from '../../../modules/local/dashboard'
+include { DASHBOARD as DASHBOARD_HASH_DEFAULT } from '../../../modules/local/dashboard'
+
+workflow dashboard_pipeline_HASHING {
+    take:
+    guide_seqSpecCheck_plots
+    guide_position_table
+    hashing_seqSpecCheck_plots
+    hashing_position_table
+    concat_anndata_rna
+    filtered_anndata_rna
+    ks_transcripts_out_dir_collected
+    concat_anndata_guide
+    ks_guide_out_dir_collected
+    concat_anndata_hashing
+    ks_hashing_out_dir_collected
+    adata_demux
+    adata_unfiltered_demux
+    mdata
+    additional_qc_dir
+    figures_dir
+    evaluation_output_dir
+    controls_evaluation_output_dir
+    benchmark_output_dir
+
+    main:
+    if (params.INFERENCE_method == 'default') {
+        DASHBOARD_HASH_DEFAULT(
+            guide_seqSpecCheck_plots,
+            guide_position_table,
+            hashing_seqSpecCheck_plots,
+            hashing_position_table,
+            mdata,
+            concat_anndata_rna,
+            filtered_anndata_rna,
+            concat_anndata_guide,
+            concat_anndata_hashing,
+            adata_demux,
+            adata_unfiltered_demux,
+            ks_transcripts_out_dir_collected,
+            ks_guide_out_dir_collected,
+            ks_hashing_out_dir_collected,
+            additional_qc_dir,
+            figures_dir,
+            evaluation_output_dir,
+            file(params.css),
+            file(params.js),
+            file(params.svg),
+            controls_evaluation_output_dir,
+            benchmark_output_dir
+        )
+    } else {
+        DASHBOARD_HASH(
+            guide_seqSpecCheck_plots,
+            guide_position_table,
+            hashing_seqSpecCheck_plots,
+            hashing_position_table,
+            mdata,
+            concat_anndata_rna,
+            filtered_anndata_rna,
+            concat_anndata_guide,
+            concat_anndata_hashing,
+            adata_demux,
+            adata_unfiltered_demux,
+            ks_transcripts_out_dir_collected,
+            ks_guide_out_dir_collected,
+            ks_hashing_out_dir_collected,
+            additional_qc_dir,
+            figures_dir,
+            evaluation_output_dir,
+            file(params.css),
+            file(params.js),
+            file(params.svg),
+            controls_evaluation_output_dir,
+            benchmark_output_dir
+        )
+    }
+
+    emit:
+    dashboard_output = (params.INFERENCE_method == 'default' ? DASHBOARD_HASH_DEFAULT.out : DASHBOARD_HASH.out)
+}
