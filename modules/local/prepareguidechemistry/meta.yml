@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "prepareguidechemistry"
-description: write your description here
+description: Module metadata for process PREPAREGUIDECHEMISTRY
 keywords:
-  - sort
-  - example
-  - genomics
+  - prepareguidechemistry
+  - nextflow
+  - module
 tools:
   - "prepareguidechemistry":
-      description: ""
+      description: "Wrapper process for PREPAREGUIDECHEMISTRY"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

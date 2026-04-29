@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "dashboard"
-description: write your description here
+description: Module metadata for process DASHBOARD
 keywords:
-  - sort
-  - example
-  - genomics
+  - dashboard
+  - nextflow
+  - module
 tools:
   - "dashboard":
-      description: ""
+      description: "Wrapper process for DASHBOARD"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

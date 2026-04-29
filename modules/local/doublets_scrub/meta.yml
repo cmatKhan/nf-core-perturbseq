@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "doublets_scrub"
-description: write your description here
+description: Module metadata for process doublets_scrub
 keywords:
-  - sort
-  - example
-  - genomics
+  - doublets_scrub
+  - nextflow
+  - module
 tools:
   - "doublets_scrub":
-      description: ""
+      description: "Wrapper process for doublets_scrub"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

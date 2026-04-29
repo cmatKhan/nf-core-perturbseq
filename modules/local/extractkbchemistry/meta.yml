@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "extractkbchemistry"
-description: write your description here
+description: Module metadata for process EXTRACTKBCHEMISTRY
 keywords:
-  - sort
-  - example
-  - genomics
+  - extractkbchemistry
+  - nextflow
+  - module
 tools:
   - "extractkbchemistry":
-      description: ""
+      description: "Wrapper process for EXTRACTKBCHEMISTRY"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

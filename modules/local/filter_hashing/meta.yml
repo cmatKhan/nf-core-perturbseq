@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "filter_hashing"
-description: write your description here
+description: Module metadata for process filter_hashing
 keywords:
-  - sort
-  - example
-  - genomics
+  - filter_hashing
+  - nextflow
+  - module
 tools:
   - "filter_hashing":
-      description: ""
+      description: "Wrapper process for filter_hashing"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

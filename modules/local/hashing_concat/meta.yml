@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "hashing_concat"
-description: write your description here
+description: Module metadata for process hashing_concat
 keywords:
-  - sort
-  - example
-  - genomics
+  - hashing_concat
+  - nextflow
+  - module
 tools:
   - "hashing_concat":
-      description: ""
+      description: "Wrapper process for hashing_concat"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

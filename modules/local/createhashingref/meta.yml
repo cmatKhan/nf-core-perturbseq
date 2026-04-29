@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "createhashingref"
-description: write your description here
+description: Module metadata for process CREATEHASHINGREF
 keywords:
-  - sort
-  - example
-  - genomics
+  - createhashingref
+  - nextflow
+  - module
 tools:
   - "createhashingref":
-      description: ""
+      description: "Wrapper process for CREATEHASHINGREF"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

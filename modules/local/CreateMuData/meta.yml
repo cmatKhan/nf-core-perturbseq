@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "CreateMuData"
-description: write your description here
+description: Module metadata for process CreateMuData
 keywords:
-  - sort
-  - example
-  - genomics
+  - CreateMuData
+  - nextflow
+  - module
 tools:
   - "CreateMuData":
-      description: ""
+      description: "Wrapper process for CreateMuData"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:

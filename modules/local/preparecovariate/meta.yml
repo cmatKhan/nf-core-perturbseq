@@ -1,59 +1,25 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "preparecovariate"
-description: |
-  Converts a JSON batch-covariate map into a tidy CSV file and derives a
-  regression formula string. Two template scripts are used in sequence:
-  parse_covariate.py writes parse_covariate.csv, then prepare_formula.py
-  reads that CSV and writes cov_string.txt containing a '+'-delimited
-  formula of columns that have more than one unique value.
+description: Module metadata for process PREPARECOVARIATE
 keywords:
-  - covariate
-  - batch
-  - formula
-  - perturbseq
+  - preparecovariate
+  - nextflow
+  - module
 tools:
-  - "python":
-      description: "General-purpose programming language"
-      homepage: "https://www.python.org"
-      documentation: "https://docs.python.org"
-      licence: ["PSF-2.0"]
-      identifier: null
-  - "pandas":
-      description: "Python data-analysis library used to serialise the covariate map to CSV"
-      homepage: "https://pandas.pydata.org"
-      documentation: "https://pandas.pydata.org/docs"
-      licence: ["BSD-3-Clause"]
+  - "preparecovariate":
+      description: "Wrapper process for PREPARECOVARIATE"
+      homepage: ""
+      documentation: ""
+      tool_dev_url: ""
+      doi: ""
+      licence: null
       identifier: null
 
 input:
-  - covariate_list:
-      type: map
-      description: |
-        Groovy Map (or list of maps) containing batch covariate information.
-        Will be JSON-serialised and passed to parse_covariate.py as a
-        positional argument. Example: [batch: ['A', 'B', 'A']]
+  - []
 
 output:
-  parsed_covariate_file:
-    - "parse_covariate.csv":
-        type: file
-        description: |
-          Tidy CSV produced by parse_covariate.py. Each column corresponds to
-          a covariate key; each row to one observation / measurement set.
-        pattern: "parse_covariate.csv"
-  covariate_string:
-    - "cov_string.txt":
-        type: file
-        description: |
-          Plain-text file containing a '+'-delimited regression formula string
-          of covariate columns that have more than one unique value, as produced
-          by prepare_formula.py. Empty string if all covariates are constant.
-        pattern: "cov_string.txt"
-  versions:
-    - "versions.yml":
-        type: file
-        description: File containing software versions
-        pattern: "versions.yml"
+  - []
 
 authors:
   - "@cmatKhan"

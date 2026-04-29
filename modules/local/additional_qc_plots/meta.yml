@@ -1,23 +1,26 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/modules/meta-schema.json
 name: "additional_qc_plots"
-description: write your description here
+description: Module metadata for process additional_qc_plots
 keywords:
-  - sort
-  - example
-  - genomics
+  - additional_qc_plots
+  - nextflow
+  - module
 tools:
   - "additional_qc_plots":
-      description: ""
+      description: "Wrapper process for additional_qc_plots"
       homepage: ""
       documentation: ""
       tool_dev_url: ""
       doi: ""
       licence: null
       identifier: null
+
 input:
   - []
+
 output:
   - []
+
 authors:
   - "@cmatKhan"
 maintainers:
