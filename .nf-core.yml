@@ -1,0 +1,18 @@
+repository_type: pipeline
+
+nf_core_version: 4.0.0
+
+lint: {}
+
+template:
+  org: nf-core
+  name: perturbseq
+  description: A nf-core template based adaptation of https://github.com/pinellolab/CRISPR_Pipeline
+  author: tmp
+  version: 1.0.0dev
+  force: true
+  outdir: .
+  skip_features:
+    - fastqc
+    - gpu
+  is_nfcore: true
